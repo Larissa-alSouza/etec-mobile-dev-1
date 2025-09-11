@@ -47,7 +47,7 @@
 <ol>
   <li>
     Clone o repositório:
-    <pre><code>git clone https://github.com/Larissa-alSouza/etec-prog-mobile.git</code></pre>
+    <pre><code>git clone https://github.com/Larissa-alSouza/etec-mobile-dev-1.git</code></pre>
   </li>
   <li>Ou faça o download do ZIP:<br />
     Clique em <strong>Code &gt; Download ZIP</strong> no GitHub.
