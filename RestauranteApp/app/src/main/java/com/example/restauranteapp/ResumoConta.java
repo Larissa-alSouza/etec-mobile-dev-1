@@ -38,10 +38,10 @@ public class ResumoConta extends Activity {
         String vapessoa = String.valueOf(vppessoa);
 
         //Exibe na segunda tela
-        txtNmesa = setText(Nmesa);
-        txtGarcom = setText(taxaG);
-        txtTotaltaxa = setText(totalV);
-        txtVpessoa = setTetx(vapessoa);
+        txtNmesa.setText(Nmesa);
+        txtGarcom.setText(taxaG);
+        txtTotaltaxa.setText(totalV);
+        txtVpessoa.setText(vapessoa);
 
     }
 }
