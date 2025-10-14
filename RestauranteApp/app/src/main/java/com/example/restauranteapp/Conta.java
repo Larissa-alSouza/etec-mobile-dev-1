@@ -9,9 +9,9 @@ public class Conta implements Serializable {
     private int QtdPessoas;
 
     public Conta() {
-        this.Nmesa = 0;          // valor padrão
-        this.Vconsumido = 0.0;   // valor padrão
-        this.QtdPessoas = 0;     // valor padrão
+        this.Nmesa = 0;        
+        this.Vconsumido = 0.0;   
+        this.QtdPessoas = 0;  
     }
 
     public Conta(int Nmesa, double Vconsumido, int QtdPessoas){
@@ -45,3 +45,4 @@ public class Conta implements Serializable {
         QtdPessoas = qtdPessoas;
     }
 }
+
