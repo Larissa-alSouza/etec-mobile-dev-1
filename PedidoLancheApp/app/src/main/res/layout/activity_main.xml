@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do cliente"
+        android:layout_marginBottom="12dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgopcoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/rbopcao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salada"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/rbopcao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bacon"
+            />
+
+        <RadioButton
+            android:id="@+id/rbopcao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frango"
+            android:layout_marginBottom="12dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionais:" />
+
+    <CheckBox
+        android:id="@+id/ckbBatata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batata Frita" />
+
+    <CheckBox
+        android:id="@+id/ckbRefri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refrigerante"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha o tamanho do lanche:" />
+
+    <Spinner
+        android:id="@+id/spnTamanho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantidade extra de molho:" />
+
+    <SeekBar
+        android:id="@+id/sbkMolho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        />
+
+    <TextView
+        android:id="@+id/txtvalor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#CC2424"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finalizar pedido"
+        android:onClick="finalizar"/>
+
+</LinearLayout>
