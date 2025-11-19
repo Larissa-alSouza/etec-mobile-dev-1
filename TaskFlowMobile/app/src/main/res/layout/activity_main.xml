@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de tarefas"
+        android:textAlignment="center"
+        android:textColor="#CC2424"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tarefa:"
+        />
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="título da tarefa"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prioridade:" />
+
+    <RadioGroup
+        android:id="@+id/rgopcoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/rbopcao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baixa"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/rbopcao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Média"
+            />
+
+        <RadioButton
+            android:id="@+id/rbopcao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alta"
+            android:layout_marginBottom="12dp"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/ckbImportante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importante"
+        android:layout_marginBottom="12dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="enviarDados"
+        android:text="Adicionar tarefa" />
+
+</LinearLayout>
